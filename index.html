@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CaptureService</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1>Capture Service Devices</h1>
+                </div>
+            </div>
+        </header>
+        <section class="container" id="news">
+            <h2>News</h2>
+            <article class="paragraphs">
+                
+            </article>
+        </section>
+        <section class="container" id="form">
+            <h2>Register devices</h2>
+            <form name="registrationForm" id="registrationForm" method="post">
+                <label>Device name:</label>
+                <input type="text" id="deviceName">
+                <br>
+                <label>Registration date (yyyy-mm-dd):</label>
+                <input type="text" id="date">
+                <br>
+                <label>Quantity:</label>
+                <input type="number" id="quantity">
+                <br>
+                <label>Show optional properties</label>
+                <input type="checkbox" id="optInfo">
+                <br>
+                <label class="optional hidden">Just kidding, no more info is needed.</label>
+                <br>
+                <input type="submit" value="Register">
+            </form>
+        </section>
+        <section class="container">
+            <h2>Change the design</h2>
+            <label><button id="magic">Magic</button></label>
+            <br>
+            <label>Enter news:</label>
+            <input type="text" id="newsData">
+            <button id="addNews">Add news</button>
+            <br>
+            <div class="newsRemoval hidden">
+                <label>Enter paragraph index:</label>
+                <input type="number" id="indexToDelete">
+                <button id="removeNews">Remove news</button>
+                <br>
+            </div>
+        </section>
+        <section class="container" id="devices">
+                <h2>Devices</h2>
+                <table class="deviceTable">
+                    <tr>
+                        <th rowspan="1">Device</th>
+                        <th rowspan="1">Registration date</th>
+                        <th rowspan="1">Quantity</th>
+                    </tr>
+                </table>
+            </section>
+        <footer><p>Copyrights &copy; 2017</p></footer>
+    </body>
+</html>
